@@ -1,17 +1,29 @@
 .friendMessage {
-
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
 }
 
 .friendImageAndText {
-
+    display: flex;
+    flex-direction: row;
 }
 
 .friendImageAndText img {
+    width: 48px;
+    height: 48px;
+    margin: 15px 10px 0 0;
+    border-radius: 50px;
+    box-shadow: 0 0 3px 1px rgba(0,0,0,0.5);
 
 }
 
 .friendText {
-
+/*    box-shadow: 0 0 3px 1px rgba(0,0,0,0.5);*/
+    padding: 5px 10px;
+    border-radius: 8px;
+    background: #F5F7FB;
+    box-shadow: 0px 5px 20px rgba(29, 33, 38, 0.03), 0px 1px 2px rgba(29, 33, 38, 0.1);
 }
 
 .friendText:after {
@@ -19,13 +31,21 @@
 }
 
 .friendName {
-
+    font-size: 18px;
+    margin-bottom: 6px;
+    text-align: left;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
 .friendMessageText {
-
+    font-size: 16px;
+    text-align: right;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
 .friendTime {
+    font-size: 10px;
+    font-weight: bold;
+    margin: 5px 0 0 9px;
 
 }
