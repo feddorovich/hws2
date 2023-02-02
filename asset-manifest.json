@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/feddorovich/hws2/static/css/main.39c6ae5c.css",
+    "main.js": "/feddorovich/hws2/static/js/main.f3710a99.js",
+    "static/js/787.66cb4309.chunk.js": "/feddorovich/hws2/static/js/787.66cb4309.chunk.js",
+    "static/media/avatar.png": "/feddorovich/hws2/static/media/avatar.d947cb9d0d13765666b6.png",
+    "index.html": "/feddorovich/hws2/index.html",
+    "main.39c6ae5c.css.map": "/feddorovich/hws2/static/css/main.39c6ae5c.css.map",
+    "main.f3710a99.js.map": "/feddorovich/hws2/static/js/main.f3710a99.js.map",
+    "787.66cb4309.chunk.js.map": "/feddorovich/hws2/static/js/787.66cb4309.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39c6ae5c.css",
+    "static/js/main.f3710a99.js"
+  ]
+}
