@@ -10,7 +10,7 @@ import avatar from './avatar.png'
 * 2 - описать тип MessagePropsType в файле Message.tsx +
 * 3 - в файле Message.tsx отобразить приходящие данные +
 * 4 - выполнить пункты 2, 3 в файле FriendMessage.tsx +
-* 5 - сделать стили в соответствии с дизайном -
+* 5 - сделать стили в соответствии с дизайном +
 * */
 
 // нужно создать правильный тип вместо any
@@ -35,11 +35,11 @@ export const message0: MessageType = {
     id: 0,
     user: {
         avatar: avatar, // можно менять
-        name: 'Some Name',  // можно менять
+        name: 'Name',  // можно менять
     },
     message: {
-        text: 'some textsome textsome textsome textsome textsome textsome text', // можно менять
-        time: '22:00', // можно менять
+        text: 'Some text', // можно менять
+        time: '21:00', // можно менять
     },
 }
 export const friendMessage0: MessageType = {
@@ -49,7 +49,7 @@ export const friendMessage0: MessageType = {
         name: 'Friend Name', // можно менять
     },
     message: {
-        text: 'зеркальное сообщение для тренировки css', // можно менять
+        text: 'Mirror message for css training', // можно менять
         time: '22:00', // можно менять
     },
 }
