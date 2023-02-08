@@ -29,3 +29,11 @@
     font-weight: 900;
     cursor: pointer;
 }
+
+.closeButton:hover {
+    background: var(---color);
+}
+
+.closeButton:active {
+    background: var(----color);
+}
