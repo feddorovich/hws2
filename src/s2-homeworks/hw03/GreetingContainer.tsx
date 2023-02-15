@@ -4,10 +4,10 @@ import { UserType } from './HW3'
 
 type GreetingContainerPropsType = {
     users: UserType[] // need to fix any
-    addUserCallback: (name: any) => void // need to fix any
+    addUserCallback: (name: string) => void // need to fix any
 }
 
-export const pureAddUser = (name: any, setError: any, setName: any, addUserCallback: any) => {
+export const pureAddUser = (name: string, setError: (error: string)=>void, setName: (name: string)=>void, addUserCallback: (name: string) => void) => {
     if (!name.trim()) {
         setError('Ошибка! Введите имя!')
     } else {
@@ -17,14 +17,14 @@ export const pureAddUser = (name: any, setError: any, setName: any, addUserCallb
     // если имя пустое - показать ошибку, иначе - добавить юзера и очистить инпут
 }
 
-export const pureOnBlur = (name: any, setError: any) => {
+export const pureOnBlur = (name: string, setError: (error: string)=>void) => {
     if (!name.trim()) {
         setError('Ошибка! Введите имя!')
     }
     // если имя пустое - показать ошибку
 }
 
-export const pureOnEnter = (e: KeyboardEvent<HTMLInputElement>, addUser: any) => { // если нажата кнопка Enter - добавить
+export const pureOnEnter = (e: KeyboardEvent<HTMLInputElement>, addUser: ()=>void) => { // если нажата кнопка Enter - добавить
     if (e.key === 'Enter') {
         addUser()}
 }
@@ -38,8 +38,8 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     addUserCallback,
 }) => {
     // деструктуризация пропсов
-    const [name, setName] = useState<any>('') // need to fix any
-    const [error, setError] = useState<any>('') // need to fix any
+    const [name, setName] = useState<string>('') // need to fix any
+    const [error, setError] = useState<string>('') // need to fix any
 
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
         setName(e.currentTarget.value) // need to fix
@@ -54,7 +54,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
         pureOnBlur(name, setError)
     }
 
-    const onEnter = (e: any) => {
+    const onEnter = (e: KeyboardEvent<HTMLInputElement>) => {
         pureOnEnter(e, addUser)
     }
 
