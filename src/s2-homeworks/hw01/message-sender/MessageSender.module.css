@@ -11,6 +11,7 @@
     border-radius: 20px;
     background-color: #F5F7FB;
     resize: none;
+    overflow: hidden;
     flex-grow: 1;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.6);
