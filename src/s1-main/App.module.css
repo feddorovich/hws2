@@ -3,9 +3,10 @@
 }
 
 .hw {
-margin: 30px;
+    margin: 30px;
 }
 
 .hwTitle {
-
+    margin-left: 30px;
+    font-weight: 500;
 }
